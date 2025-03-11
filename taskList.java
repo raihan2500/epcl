@@ -23,8 +23,8 @@ class TaskList {
   }
 
   static void show() {
-    for (int i = 0; i < list.size(); i++) {
-      System.out.println(i + ": " + list.get(i));
+    for(String item : list){
+      System.out.println(item);
     }
   }
 
