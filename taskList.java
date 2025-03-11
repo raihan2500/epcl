@@ -12,13 +12,14 @@ class TaskList {
   static void add() {
     System.out.print("N: ");
     scanner.nextLine();
-    list.add(scanner.nextLine());  }
+    list.add(scanner.nextLine());
+  }
 
   static void remove() {
     System.out.print("I: ");
-        int i = scanner.nextInt();
-        if (i >= 0 && i < list.size())
-          list.remove(i);
+    int i = scanner.nextInt();
+    if (i >= 0 && i < list.size())
+      list.remove(i);
   }
 
   static void show() {
@@ -31,15 +32,16 @@ class TaskList {
     while (true) {
       System.out.println("1: Add 2: Remove 3: Show 4: Exit");
       int choice = scanner.nextInt();
+      scanner.nextLine();
       if (choice == ADD) {
-        add();        
+        add();
       } else if (choice == REMOVE) {
         remove();
       } else if (choice == SHOW) {
         show();
-      } else if (choice == EXIT){
+      } else if (choice == EXIT) {
         break;
-      }else{
+      } else {
         System.out.println("Invalid choice");
       }
     }
