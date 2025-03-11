@@ -37,8 +37,11 @@ class TaskList {
         remove();
       } else if (choice == SHOW) {
         show();
-      } else if (choice == EXIT)
+      } else if (choice == EXIT){
         break;
+      }else{
+        System.out.println("Invalid choice");
+      }
     }
     scanner.close();
   }
