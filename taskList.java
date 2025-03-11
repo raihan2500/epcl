@@ -40,5 +40,6 @@ class TaskList {
       } else if (choice == EXIT)
         break;
     }
+    scanner.close();
   }
 }
